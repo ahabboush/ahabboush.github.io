@@ -1,0 +1,117 @@
+.navbar {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(224, 28, 61);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color:lightcoral;
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid lightcoral;
+}
+
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+body{
+    margin: 0;
+    background-color: rgb(227, 191, 241);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    margin: 100px auto;
+    background-color: rgb(218, 245, 145);
+    border: 1px solid ghostwhite;
+    padding: 75px;
+    border-radius: 50px;
+}
+label{
+    font-weight: bold;
+    display: block;
+}
+input[type = "text"],
+input[type = "email"],
+input[type = "password"]{
+    display: block;
+    padding: 20px;
+    border: 1px solid ghostwhite;
+    width: 85%;
+}
+button[type = "submit"]{
+    font-family: "Agbalumo";
+    padding: 20px;
+    background-color: lightcoral;
+    color: rgb(218, 245, 145);
+    border: 1px solid lightcoral;
+    font-weight: bold;
+    border-radius: 20px;
+}
+button:hover{
+    color: black;
+    background-color:  rgb(227, 191, 241);
+    cursor: pointer;
+}
+h1{
+    font-family: "Agbalumo";
+    background-color: lightcoral;
+    color:rgb(218, 245, 145);
+    padding:20px;
+    border-radius:20px;
+
+}
+h2{
+    font-family: "Agbalumo";
+    color: rgb(224, 28, 61);
+    
+}
+small{
+    color: rgb(224, 28, 61);
+}
+footer{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: rgb(224, 28, 61);
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+

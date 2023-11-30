@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon.ico">
+    <link rel="stylesheet" href="formstyles.css">  
+    <title>Form</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar" id="myNavbar">
+            <link rel="#" href="#">
+            <a href="Main.html">Main</a>        
+            <a href="Form.html">Form</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="https://ca.linkedin.com/in/ayah-habboush-261529240">Linkedin</a>
+            <a href="mailto:w0476041@nscc.com">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+        </nav>
+    <main>
+        <form class = "" method = "post"> <!-- will post the information for the website to the database we are using. -->
+            <h1>Welcome To  My Hackathon!</h1>
+            <h2>Please Sign Up!</h2>
+
+            <label>First Name</label><br>
+            <input type="text" placeholder="Enter here....."><br>
+            <br>
+
+            <label>E-mail</label><br>
+            <input type="email" required placeholder="example@domain.com"><br>
+            <br>
+                <!-- the two lines abve can be done this way as well -->
+            <!-- <lable>First Name</lable>
+            <input type="text" placeholder=""> -->
+            <!-- <br> -->
+            
+            <label>Password:</label>
+            <small>Choose a password between a-z and 0-9, and it is not case sensitive</small><br>
+            <input type="password" pattern="[a-zA-Z0-9]+"> required<br>
+            <br>
+
+            <label>Confirm Password:</label><br>
+            <input type="password" pattern="[a-zA-Z0-9]+"><br>
+            <br>
+
+            <label>Remeber your password?</label>
+            <input type="checkbox"><br>
+            <br>
+
+            <label>What Dates are you Attending?</label><br>
+            <br>
+            <input type="radio" name="days" value="Friday">Friday<br>
+            <input type="radio" name="days" value="Saturday">Saturday<br>
+            <input type="radio" name="days" value="Sunday">Sunday<br>
+            <br>
+
+            <label>Choose which weekend of the month:</label><br>
+            <input type="datetime-local"><br>
+            <br>
+            
+
+            <!-- This will give the submission of the info to the backend seerver or the database -->
+            <button type="submit"> Submitt</button> 
+        </form>
+    </main>
+    <footer>
+        &copy; Ayah Habboush | 2023 All rights reserved
+    </footer>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("myNavbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

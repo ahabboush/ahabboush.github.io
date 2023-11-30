@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicond.ico">
+    <link rel="stylesheet" href="portfoliostyle.css"> 
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav class="navbar" id="myNavbar">
+        <link rel="#" href="#">
+        <a href="Main.html">Main</a>        
+        <a href="Form.html">Form</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="https://ca.linkedin.com/in/ayah-habboush-261529240">Linkedin</a>
+        <a href="mailto:w0476041@nscc.com">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+    </nav>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>My Files</th>
+                <th>Discription</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Website Link</td>
+                <td><a href="Apple.html"><img src="Images/logo.png" width="25" height="25" class="d-inline-block align-top" alt="">Apple </a></td>
+                <td>My Apple website Demo</td>
+            </tr>
+            <tr>
+                <td>Youtube Video</td>
+                <td><iframe class ="responsive-video" width="560" height="315" src="https://www.youtube.com/embed/P2HFbfjNDZU?si=UuThcS-wgSF6NT6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                <td>My Favourit Music Video. It's Very Meaningfull</td>
+            </tr>
+            <tr>
+                <td>PDF File</td>
+                <td><a href="OSYS1200.pdf" class="download-link" download="your-file-name.pdf">Download PDF</a></td>
+                <td>One of the first assignments worked on for OSYS1200. <br>
+                    I really enjoyed that class so much. I hope the document will be helpfull.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    
+    <footer>
+        &copy; Ayah Habboush | 2023 All rights reserved
+    </footer>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("myNavbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
